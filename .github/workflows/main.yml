@@ -26,7 +26,7 @@ jobs:
         uses: docker/build-push-action@v2.4.0
         with:
         
-           context: ./scr
+           context: ./src
            file: ./src/Dockerfile
            push: true
            tags:
