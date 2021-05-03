@@ -39,6 +39,4 @@ jobs:
                 with:
                   manifest: |
                     K8s/mongodb/deployment.yaml
-                    K8s/mongodb/service.yaml
-
-       
+                    K8s/mongodb/service.yaml 
