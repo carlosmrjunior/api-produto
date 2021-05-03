@@ -31,8 +31,7 @@ jobs:
            push: true
            tags: |
              carlosmrjunior/api-bootcamp-produto:latest
-             carlosmrjunior/api-bootcamp-produto:${{github.run_number}}
-            
+             carlosmrjunior/api-bootcamp-produto:${{github.run_number}}      
          
   CD:
     runs-on: ubuntu-latest
