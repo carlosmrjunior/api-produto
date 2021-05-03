@@ -31,12 +31,12 @@ jobs:
                 uses: Azure/k8s-set-context@v1
                 with:
                   method: kubeconfig
-            kubeconfig: ${{secrets.K8S.CONFIG}}
+                  kubeconfig: ${{secrets.K8S.CONFIG}}
               
               - name: Deploy MongoDB
                 uses: Azure/k8s-deploy@v1.3
                 with:
-                  manifest:
+                  manifest: |
                     k8s/mongodb/deployment.yaml
                     k8s/mongodb/service.yaml
 
