@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
        - name: api 
-         image: carlosmrjunior/api-bootcamp-produto:v2
+         image: carlosmrjunior/api-bootcamp-produto:latest
          ports:
          - containerPort: 8080
          env: 
