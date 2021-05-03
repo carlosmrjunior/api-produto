@@ -4,7 +4,7 @@ on:
     branches: [ master ]
   workflow_dispatch:
 jobs:
-  CI:
+    CI:
      runs-on: ubuntu-latest
      steps:
       - uses: actions/checkout@v2
@@ -22,7 +22,8 @@ jobs:
            tags: |
              carlosmrjunior/api-bootcamp-produto:latest
              carlosmrjunior/api-bootcamp-produto:v${{github.run_number}}
-           CD:
+           
+    CD:
             runs-on: ubuntu-latest
             needs: [CI]
             steps: 
